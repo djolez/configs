@@ -5,6 +5,7 @@ alias i="sudo apt-get install"
 alias sshd="ssh djolez@192.168.1.3"
 alias szsh="source ~/.zshrc"
 alias esptool="sudo /usr/local/bin/esptool.py"
+alias slink="ln -sf"
 #Directories
 alias h="cd ~/git-projects/hydroponic_2.0"
 alias he="cd ~/git-projects/hydroponic_2.0/esp8266"
