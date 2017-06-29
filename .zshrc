@@ -26,7 +26,7 @@ ZSH_THEME="maran"
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/djolez/.oh-my-zsh
+  export ZSH=/home/dlz/.oh-my-zsh
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
