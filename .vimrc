@@ -12,3 +12,7 @@ set tabstop=4
 set shiftwidth=4
 
 set clipboard=unnamedplus
+
+set t_Co=256
+syntax on
+colorscheme wwdc16
