@@ -2,6 +2,10 @@
 # ~/.bashrc
 #
 
+export HISTSIZE=10000
+shopt -s histappend
+PROMPT_COMMAND='history -a'
+
 [[ $- != *i* ]] && return
 
 colors() {
