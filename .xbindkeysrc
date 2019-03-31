@@ -1,0 +1,33 @@
+#thumb wheel up => increase volume and unmute      
+"amixer -D pulse set Master 4000+ unmute"
+   b:6                                   
+                                        
+# thumb wheel down => lower volume       
+"amixer -D pulse set Master 4000-"       
+   b:7                                   
+                                        
+# backward button       
+"xte 'keydown Control_L' 'keydown Shift_L' 'keydown Tab' 'keyup Control_L' 'keyup Shift_L' 'keyup Tab'"                
+   b:8                                   
+                                        
+# forward button            
+"xte 'keydown Control_L' 'keydown Tab' 'keyup Control_L' 'keyup Tab'"                
+   b:9
+
+# thumb button => play/pause music         
+# Credit to gregmuellegger https://bbs.archlinux.org/viewtopic.php?pid=1551271#p1551271                               
+# We need a sleep here since the button triggers a few more key codes. 
+# It also triggers Control+Mod2+Control_L and Alt+Mod2+Alt_L. The sleep       
+# prevents that X receives those keypresses simultaniously. Therefore they    
+# might interfere and trigger unwanted actions. By the sleep we make sure that
+# the Alt+Left is receive as distinct event.                                  
+"sleep 0.1 && xte 'keydown Control_L' 'mouseclick 1' 'keyup Control_L'"                                        
+   m:0xc + c:23
+
+"putty"
+m:0x8 + c:33
+
+"keepass"
+m:0x8 + c:45
+
+
