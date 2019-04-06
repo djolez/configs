@@ -146,10 +146,11 @@ ex ()
 export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1;41;5:votes=1;44:dsc=0:other=1;35"
 
 #CUSTOM
-alias vpnc="sudo openvpn /etc/openvpn/Prague.ovpn"
+alias vpnc="sudo openvpn /etc/openvpn/client/perfect_privacy/Prague.conf"
 alias vpnd="pgrep openvpn && sudo pkill openvpn"
 alias vpnr="vpnd; vpnc"
 alias vpnf="vpnd; sudo ip link set wlp8s0 down; sudo ip link set wlp8s0 up; vpnc;"
+alias vpnlf="sudo openvpn /etc/openvpn/client/lotusflare/djordje_simic.ovpn"
 
 alias data="cd /run/media/rnd/Data"
 alias vm="cd /run/media/rnd/VM"
@@ -167,6 +168,4 @@ alias gc="git commit -m"
 alias gpom="git push origin master"
 alias gba="git branch -a"
 alias gbc="git checkout "
-
-
 
