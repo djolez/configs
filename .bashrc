@@ -154,6 +154,7 @@ alias vpnlf="sudo openvpn /etc/openvpn/client/lotusflare/djordje_simic.ovpn"
 
 alias data="cd /run/media/rnd/Data"
 alias vm="cd /run/media/rnd/VM"
+alias cm="cd ~/lotusflare/cm"
 
 alias ls="ls -hN --color=auto --group-directories-first"
 alias ll="ls -al"
